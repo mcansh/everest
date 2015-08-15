@@ -1,0 +1,68 @@
+// @import url(http://fonts.googleapis.com/css?family=Montserrat:400)
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700)
+@import url(href=//brick.a.ssl.fastly.net/Cardo:400,600)
+*
+  margin: 0
+
+body
+  font:
+    family: "Source Sans Pro", sanserif
+sup
+  margin-left: 5px
+nav
+  position: fixed
+  width: 100%
+  color: white
+  display: flex
+  align-items: center
+  .brand
+    padding: 20px 60px
+    flex-grow: 1
+    font-weight: 400
+    @media (max-width: 600px)
+      padding: 20px 10px
+  a
+    margin: 0 10px
+    text-decoration: none
+    color: white
+    &:last-child
+      padding: 20px 60px
+      @media (max-width: 600px)
+        padding: 20px 10px
+
+.scrolled
+  height: 76px
+  width: 100%
+  background: #39414A
+
+header
+  display: flex
+  width: 100vw
+  height: 75vh
+  justify-content: center
+  align-items: center
+  color: white
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
+    image: url(../img/bg.jpg)
+    size: cover
+    position: center
+    repeat: no-repeat
+  h1
+    font-size: 6em
+    font-weight: 700
+    @media (max-width: 600px)
+      font-size: 3em
+    span
+      font-weight: 200
+
+.page-content
+  display: flex
+  justify-content: center
+  margin: 40px 0
+  font-family: "Cardo"
+  font-weight: 600
+  p
+    max-width: 700px
+    line-height: 1.5em
+    @media (max-width: 600px)
+      margin: 0 40px
